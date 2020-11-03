@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PodLibraryView" customModule="FeatherBlurSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Esm-YZ-Sik">
+                    <rect key="frame" x="15" y="15" width="170" height="170"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="14J-jh-6Lb">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="24y-4Z-2sS">
+                                <rect key="frame" x="18" y="18" width="134" height="134"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jkd-UT-ih2">
+                                        <rect key="frame" x="0.0" y="0.0" width="134" height="62"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FaceTime" translatesAutoresizingMaskIntoConstraints="NO" id="Hlk-Se-jZk">
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FaceTime" translatesAutoresizingMaskIntoConstraints="NO" id="xkG-TT-BlP">
+                                                <rect key="frame" x="72" y="0.0" width="62" height="62"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fR4-FT-sN4">
+                                        <rect key="frame" x="0.0" y="72" width="134" height="62"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FaceTime" translatesAutoresizingMaskIntoConstraints="NO" id="8Mh-Jn-Cga">
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FaceTime" translatesAutoresizingMaskIntoConstraints="NO" id="rDx-17-A3Y">
+                                                <rect key="frame" x="72" y="0.0" width="62" height="62"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="24y-4Z-2sS" firstAttribute="top" secondItem="14J-jh-6Lb" secondAttribute="top" constant="18" id="9KA-mX-z1K"/>
+                            <constraint firstAttribute="trailing" secondItem="24y-4Z-2sS" secondAttribute="trailing" constant="18" id="DGQ-ad-O0t"/>
+                            <constraint firstAttribute="bottom" secondItem="24y-4Z-2sS" secondAttribute="bottom" constant="18" id="IR3-WH-68y"/>
+                            <constraint firstItem="24y-4Z-2sS" firstAttribute="leading" secondItem="14J-jh-6Lb" secondAttribute="leading" constant="18" id="Map-mF-IC3"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Esm-YZ-Sik" secondAttribute="height" id="ZJg-fm-gbg"/>
+                    </constraints>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemTealColor"/>
+            <constraints>
+                <constraint firstItem="Esm-YZ-Sik" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="Eju-rV-UCj"/>
+                <constraint firstItem="Esm-YZ-Sik" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="Rcb-JN-AN9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Esm-YZ-Sik" secondAttribute="trailing" constant="15" id="ZHD-8p-6hi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Esm-YZ-Sik" secondAttribute="bottom" constant="15" id="ey7-n8-3Pq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="backgroundBlur" destination="Esm-YZ-Sik" id="Nc8-xg-1QX"/>
+                <outletCollection property="images" destination="Hlk-Se-jZk" collectionClass="NSMutableArray" id="Smf-TF-f6e"/>
+                <outletCollection property="images" destination="xkG-TT-BlP" collectionClass="NSMutableArray" id="63a-PP-aYW"/>
+                <outletCollection property="images" destination="8Mh-Jn-Cga" collectionClass="NSMutableArray" id="ycv-8V-tnH"/>
+                <outletCollection property="images" destination="rDx-17-A3Y" collectionClass="NSMutableArray" id="ubY-63-RNl"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-68.303571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FaceTime" width="360" height="360"/>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
