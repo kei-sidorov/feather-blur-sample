@@ -6,9 +6,7 @@
 //
 
 #import "FeatherBlurView.h"
-#import <dlfcn.h>
-
-#define SBH_PATH @"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/SpringBoardHome.framework/SpringBoardHome"
+#import "Paths.h"
 
 @interface SBHFeatherBlurView : UIView
 - (instancetype) initWithRecipe:(int)arg1;
@@ -17,14 +15,14 @@
 @implementation FeatherBlurView
 
 + (void)load {
-    const char *path = [SBH_PATH cStringUsingEncoding:NSUTF8StringEncoding];
+    const char *path = [SBF_PATH cStringUsingEncoding:NSUTF8StringEncoding];
     dlopen(path, RTLD_NOW);
 }
 
 - (instancetype) init {
     self = [super init];
     if (self) {
-        SBHFeatherBlurView *view = [NSClassFromString(@"SBHFeatherBlurView") alloc];
+        SBHFeatherBlurView *view = [NSClassFromString(@"SBFFeatherBlurView") alloc];
         view = [view initWithRecipe:0x2];
         view.translatesAutoresizingMaskIntoConstraints = NO;
         [self addSubview:view];

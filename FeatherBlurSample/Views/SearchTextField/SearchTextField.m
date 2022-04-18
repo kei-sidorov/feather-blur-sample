@@ -7,12 +7,18 @@
 
 #import <UIKit/UIKit.h>
 #import "SearchTextField.h"
+#import "Paths.h"
 
 @interface SBHSearchTextField : UISearchTextField
 
 @end
 
 @implementation SearchTextField
+
++ (void)load {
+	const char *path = [SBH_PATH cStringUsingEncoding:NSUTF8StringEncoding];
+	dlopen(path, RTLD_NOW);
+}
 
 - (instancetype) init {
     self = [super init];

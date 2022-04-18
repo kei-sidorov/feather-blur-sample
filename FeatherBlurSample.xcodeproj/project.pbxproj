@@ -24,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0083287D280D2F0E0025EDED /* Paths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Paths.h; sourceTree = "<group>"; };
 		F910E15F2551D0C300644546 /* FeatherBlurSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeatherBlurSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F910E1622551D0C300644546 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F910E1632551D0C300644546 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 		F910E1852551D20200644546 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0083287D280D2F0E0025EDED /* Paths.h */,
 				F95402C025618F950059538E /* SearchTextField */,
 				F916CC1C2552D82A00C64E68 /* FeatherBlurView */,
 				F916CC15255262B800C64E68 /* PodLibraryView */,
